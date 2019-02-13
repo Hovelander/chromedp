@@ -474,7 +474,7 @@ func (h *TargetHandler) WaitFrame(ctxt context.Context, id cdp.FrameID) (*cdp.Fr
 // WaitNode waits for a node to be loaded using the provided context.
 func (h *TargetHandler) WaitNode(ctxt context.Context, f *cdp.Frame, id cdp.NodeID) (*cdp.Node, error) {
 	// TODO: fix this
-	timeout := time.After(3 * time.Second)
+	timeout := time.After(1 * time.Second)
 
 	for {
 		select {
